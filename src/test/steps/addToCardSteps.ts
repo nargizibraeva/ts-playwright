@@ -6,7 +6,7 @@ setDefaultTimeout(60 * 1000 * 2);
      
 Given('User search for a {string}', async function (book) {
     await pageFixture.page.locator("input[type='search']").fill(book);
-    await pageFixture.page.waitForTimeout(2000);
+    await pageFixture.page.waitForTimeout(2500);
     await pageFixture.page.locator ("mat-option[role='option'] span").click();
 });
     
